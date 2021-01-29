@@ -1,0 +1,51 @@
+.container {
+  background-color: rgb(295,192,203);
+}
+
+.debug .container [class*="col-"] {
+  position: relative;
+}
+
+/* inietto testo all'interno dei div*/
+.container [class*="col-"]::before{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .col-1::before{
+  content: "1 col";
+}
+.container .col-2::before{
+  content: "2 col";
+}
+.container .col-3::before{
+  content: "3 col";
+}
+.container .col-4::before{
+  content: "4 col";
+}
+.container .col-5::before{
+  content: "5 col";
+}
+.container .col-6::before{
+  content: "6 col";
+}
+.container .col-7::before{
+  content: "7 col";
+}
+.container .col-8::before{
+  content: "8 col";
+}
+.container .col-9::before{
+  content: "9 col";
+}
+.container .col-10::before{
+  content: "10 col";
+}
+.container .col-11::before{
+  content: "11 col";
+}
+.container .col-12::before{
+  content: "12 col";
+}
