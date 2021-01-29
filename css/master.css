@@ -49,3 +49,16 @@
 .container .col-12::before{
   content: "12 col";
 }
+
+/* final container */
+.container.final .col-6::before {
+  content: "";
+}
+
+.white {
+  background-color: white;
+}
+
+.col-12.white [class*="col-"] {
+  background-color: rgb(240,127,128);
+}
