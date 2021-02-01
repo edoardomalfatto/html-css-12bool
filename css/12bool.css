@@ -1,7 +1,7 @@
 /* debugging: Setto un'altezza un background e un border solamente per visualizzare meglio il mio framework */
-.container {
-  height: 150px;
-  background-color: red;
+.debug .container {
+  /* height: 100px; */
+  background-color: pink;
 }
 
 .debug .container [class*="col-"] {
@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-.debug .container [class*="col-"] {
+.container [class*="col-"] {
   float:left;
 }
 
@@ -30,7 +30,12 @@
   max-width: 1170px;
   margin: 0 auto;
 }
-
+.container::after ,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+}
 /* imposto la larghezza delle colonne in dodicesimi */
 
 .col-1 {
